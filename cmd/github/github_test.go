@@ -347,6 +347,14 @@ func TestFetchFromGitHub(t *testing.T) {
 			URL:      "https://github.com/rails/strong_parameters",
 			Archived: true,
 		},
+		// Forked
+		{
+			Name:     "rails",
+			Owner:    "rails",
+			Repo:     "web-console",
+			URL:      "https://github.com/rails/web-console",
+			Archived: false,
+		},
 	}
 
 	for _, tt := range tests {
